@@ -1,0 +1,30 @@
+:root {
+  --night: #140a2e; --panel: #241845; --ink: #0d0820;
+  --pink: #ff2e93; --lime: #b6ff1a; --yellow: #ffe600; --cyan: #00e5ff; --orange: #ff7a00;
+  --text: #ffffff; --muted: #b9a8e0;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--night); color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+.bands { height: 30px; background: linear-gradient(var(--pink) 0 20%, var(--orange) 20% 40%, var(--yellow) 40% 60%, var(--lime) 60% 80%, var(--cyan) 80%); }
+main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+h1, h2, .brand { font-family: "Bungee", Impact, sans-serif; letter-spacing: .5px; }
+h1 { color: var(--yellow); font-size: clamp(30px, 7vw, 46px); line-height: 1.1; margin: 0 0 8px; text-shadow: 3px 3px 0 var(--pink); }
+h2 { color: var(--lime); font-size: 21px; margin: 32px 0 8px; }
+a { color: var(--cyan); }
+.brand { display: inline-flex; align-items: center; gap: 10px; color: var(--yellow); text-decoration: none; font-size: 20px; margin-bottom: 24px; }
+.brand img { border-radius: 10px; border: 2px solid var(--ink); }
+.hero { width: 100%; height: auto; border-radius: 18px; border: 3px solid var(--pink); box-shadow: 6px 7px 0 var(--ink); }
+.lead { font-size: 20px; color: var(--muted); }
+.card { background: var(--panel); border: 3px solid var(--pink); border-radius: 18px; padding: 16px 20px; box-shadow: 5px 6px 0 var(--ink); margin: 16px 0; }
+ul { padding-left: 22px; }
+li { margin: 6px 0; }
+.muted { color: var(--muted); font-size: 15px; }
+.btn { display: inline-block; background: var(--pink); color: #fff; font-family: "Bungee", Impact, sans-serif; text-decoration: none; padding: 12px 18px; border-radius: 14px; border: 3px solid var(--ink); box-shadow: 4px 5px 0 var(--ink); margin: 6px 8px 6px 0; }
+.btn.lime { background: var(--lime); color: var(--ink); }
+.lang { float: right; font-size: 14px; }
+footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
+@media (max-width: 480px) { body { font-size: 16px; } .lang { float: none; display: block; margin-bottom: 8px; } }
